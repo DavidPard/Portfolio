@@ -1,0 +1,678 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans:wght@300&family=Philosopher&family=Play&display=swap');
+
+/********** COLORES **********/
+:root {
+    --color-primario: #5977DF;
+    --color-secundario: #27C6E9;
+    --color-terciario: #F7F7F7;
+    --color-blanco: #FFFFFF
+}
+
+body {
+    font-family: 'Play', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/********** FONDO DE LA PAGINA **********/
+.intro {
+    display: flex;
+    background-image: url("img/fondo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: 'Play', sans-serif;
+}
+
+.row {
+    --bs-gutter-x: 0rem;
+}
+
+/********** MENU BLOQUE BLANCO **********/
+.blanco {
+    width: 100%;
+    height: 413px;
+    background: rgba(255, 255, 255, 0.62);
+}
+
+.sdd {
+    margin-left: 20px;
+    padding-top: 20px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.manita {
+    height: 19px;
+}
+
+.sdd2 {
+    margin-left: 20px;
+    padding-top: 5px;
+    font-size: 24px;
+    color: #666060;
+}
+
+.raya {
+    width: 23px;
+    height: 0;
+    border: 1px solid black;
+    margin: 20px 0px 5px;
+}
+
+.explicacion {
+    margin-left: 20px;
+    padding-top: 10px;
+    font-weight: bold;
+}
+
+.experiencia-laboral {
+    margin-left: 20px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    background-color: #5977DF;
+    padding: 10px;
+    margin-top: 15px;
+    font-size: 13px;
+    width: 140px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.proyecto-realizados {
+    margin-left: 20px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    background-color: #27C6E9;
+    padding: 10px;
+    margin-top: 15px;
+    font-size: 13px;
+    width: 140px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.experiencia-laboral:hover {
+    background-color: #0240bd;
+}
+
+.proyecto-realizados:hover {
+    background-color: #08c0fd;
+}
+
+.experiencia-laboral:active,
+.proyecto-realizados:active {
+    transform: scale(0.9);
+}
+
+.instagram {
+    margin-top: 20px;
+    margin-left: 35px;
+    height: 33px;
+    transition: transform 0.5s;
+}
+
+.linkedin {
+    margin-top: 20px;
+    height: 33px;
+    transition: transform 0.5s;
+}
+
+.instagram:hover,
+.linkedin:hover,
+.instagram:active,
+.linkedin:active {
+    transform: scale(1.2);
+}
+
+.facebook {
+    margin-top: 20px;
+    margin-left: 0;
+    height: 33px;
+    transition: transform 0.5s;
+}
+
+.facebook:hover,
+.facebook:active {
+    transform: scale(1.2);
+}
+
+.sdd5 {
+    margin-top: 20PX;
+}
+
+/********** MENU DESPLEGABLE **********/
+.menu {
+    text-align: right;
+    width: 100%;
+}
+
+.bg-light {
+    background-color: transparent !important;
+}
+
+.nav-link {
+    color: white;
+    font-size: 14px;
+}
+
+.nav-link:hover {
+    color: var(--color-primario);
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+    margin-right: 30px
+}
+
+.navbar-toggler {
+    margin-left: auto;
+    background-color: white;
+    border-color: white;
+    color: black;
+}
+
+.navbar-toggler:hover {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-color: white !important;
+}
+
+.navbar-toggler:focus {
+    background-color: rgba(255, 255, 255, 0.7);
+    border-color: white !important;
+    box-shadow: none;
+}
+
+/********** SOBRE MI **********/
+.sobreMi {
+    margin-top: 5px;
+    background-color: #C9D9E5;
+}
+
+.seccion {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.seccion h2 {
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.explicacion2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 120px;
+    font-weight: bold;
+}
+
+.explicacion2 label {
+    color: rgb(0, 0, 0);
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+
+.raya3 {
+    padding: 10px;
+    width: 30px;
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.imagen {
+    margin-top: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #C9D9E5;
+}
+
+.texto {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 80px;
+}
+
+.texto {
+    width: 300px;
+    font-weight: bold;
+}
+
+.emoji {
+    height: 20px;
+}
+
+.botonCV {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.botonCV button {
+    border: none;
+    border-radius: 20px;
+    color: white;
+    background-color: #5977DF;
+    padding: 10px;
+    font-size: 13px;
+    width: 140px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.imagenVisual {
+    height: 120px;
+}
+
+/********** MI EXPERIENCIA **********/
+.experiencia {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tituloEx {
+    font-weight: bold;
+}
+
+.raya5 {
+    margin: 0 auto;
+    padding: 10px;
+    width: 95px;
+    border-bottom: 2px solid rgb(0, 0, 0);
+}
+
+.aviso {
+    margin-top: 30px;
+    margin-left: 70px;
+    width: 70%;
+}
+
+.aviso2 {
+    margin-left: 70px;
+    width: 70%;
+}
+
+.lenguaje {
+    font-weight: bold;
+}
+
+
+.imagenes2 {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    margin-left: 24px;
+    margin-right: 20px;
+}
+
+.imagenes3 {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 75px;
+    margin-left: 15px;
+    margin-right: 20px;
+}
+
+.titutloEx {
+    text-align: center;
+}
+
+.contendorExp {
+    text-align: center;
+}
+
+/********** PROYECTOS **********/
+.proyectoFondo {
+    margin-top: 30px;
+    background-color: #BFECFF;
+}
+
+.tituloProyecto {
+    font-weight: bold;
+}
+
+.raya6 {
+    margin: 0 auto;
+    padding: 10px;
+    width: 95px;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    margin-bottom: 30px;
+}
+
+.er {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.faada {
+    background-color: white;
+    width: 200px;
+    margin: auto;
+    height: 290px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.verBoton {
+    background-color: #5977DF;
+    border: none;
+    color: white;
+    padding: 5px;
+    width: 100px;
+    border-radius: 10px;
+}
+
+.sasd {
+    margin-top: 20px;
+}
+
+/********** FOOTER **********/
+.footerFondo {
+    background-color: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.tituloFooter {
+    color: white;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.contactop {
+    color: white;
+    font-size: 16px;
+}
+
+.homeFooter {
+    margin-top: 10px;
+    color: white;
+    font-size: 16px;
+}
+
+.saddqwd {
+    padding-left: 90px;
+}
+
+.rayaFooter1 {
+    height: 12px;
+    margin-left: 3px;
+    margin-right: 3px;
+    border: 1px solid white;
+}
+
+.contactop:hover {
+    color: #5977DF;
+}
+
+.homeFooter:hover {
+    color: #5977DF;
+}
+
+
+/********** INTRO DE LA PAGINA MEDIA-QUERY **********/
+@media screen and (min-width: 540px) {
+
+    .rayaFooter1 {
+        height: 18px;
+    }
+
+    .tituloFooter {
+        font-size: 32px;
+    }
+
+    .margen {
+        margin-bottom: 40px;
+    }
+
+    .contactop {
+        font-size: 20px;
+        margin-bottom: 60px;
+    }
+
+    .homeFooter {
+        margin-top: 0px;
+        font-size: 24px;
+    }
+
+    .faada {
+        background-color: white;
+        width: 300px;
+        margin: auto;
+        height: 390px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .tituloProyecto {
+        font-weight: bold;
+        font-size: 48px;
+    }
+
+    .raya6 {
+        margin-bottom: 30px;
+        width: 200px;
+    }
+
+    .ultimoBoton {
+        margin-top: 30px;
+    }
+
+    .imagenPro {
+        height: 190px;
+        width: 300px;
+    }
+
+    .asaswdwe {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /********** MI EXPERIENCIA **********/
+    .tituloEx {
+        text-align: left;
+        width: 30%;
+        display: inline-block;
+        font-size: 48px;
+        color: black;
+    }
+
+    .raya5 {
+        margin-left: -290px;
+        margin-top: 85px;
+        padding: 10px;
+        width: 270px;
+        border-bottom: 2px solid rgb(0, 0, 0);
+    }
+
+    .contendorExp {
+        display: flex;
+        align-items: flex-start;
+        margin-left: 4%;
+    }
+
+    .aviso {
+        margin-top: 30px;
+        width: 30%;
+        font-size: 16px;
+    }
+
+    .aviso2 {
+        margin-top: 30px;
+        width: 30%;
+        font-size: 16px;
+    }
+
+    .custom-column {
+        margin: 0px -90px;
+    }
+
+    .custom-column img,
+    .custom-column label {
+        margin: 5px 5px;
+    }
+
+    /********** OTRA COSA **********/
+    .blanco {
+        width: 850px;
+        height: 740px;
+        background: rgba(255, 255, 255, 0.62);
+    }
+
+    .sdd {
+        margin-left: 75px;
+        padding-top: 20px;
+        font-weight: bold;
+        font-size: 48px;
+    }
+
+    .manita {
+        height: 50px;
+    }
+
+    .sdd2 {
+        margin-left: 75px;
+        padding-top: 30px;
+        font-size: 36px;
+        padding-bottom: 10px;
+    }
+
+    .sdd3 {
+        padding-bottom: 30px;
+        max-width: 500px;
+    }
+
+    .raya {
+        width: 50px;
+        height: 0;
+        border: 1px solid black;
+        margin: 20px 0px 5px;
+    }
+
+    /*** RAYAS DEL MENU ***/
+    .raya2 {
+        border: 1px solid white;
+        height: 20px;
+        margin-top: 15px;
+        margin-left: 4px;
+        margin-right: 4px;
+    }
+
+    .explicacion {
+        margin-left: 75px;
+        padding-top: 10px;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .experiencia-laboral {
+        margin-left: 90px;
+        padding: 13px;
+        font-size: 13px;
+        width: 210px;
+        font-size: 20px;
+    }
+
+    .proyecto-realizados {
+        margin-left: 90px;
+        padding: 13px;
+        font-size: 20px;
+        width: 210px;
+    }
+
+    .instagram {
+        margin-top: 30px;
+        margin-left: 140px;
+        height: 50px;
+    }
+
+    .linkedin {
+        margin-top: 30px;
+        margin-left: 10px;
+        height: 50px;
+    }
+
+    .facebook {
+        margin-top: 30px;
+        margin-left: 10px;
+        height: 50px;
+    }
+
+    .experiencia-laboral {
+        margin-left: 128px;
+        padding: 13px;
+        font-size: 20px;
+        width: 210px;
+    }
+
+    .proyecto-realizados {
+        margin-left: 128px;
+        padding: 13px;
+        font-size: 20px;
+        width: 210px;
+    }
+
+    .nav-link {
+        color: white;
+        font-size: 24px;
+    }
+
+    /*** SOBRE MI ***/
+
+    .seccion {
+        margin-left: 520px;
+    }
+
+    .seccion h2 {
+        font-size: 40px;
+    }
+
+    .imagen img {
+        height: 240px;
+    }
+
+    .texto {
+        margin-left: 0px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    .aa {
+        font-size: 20px;
+    }
+
+    .botonCV {
+        width: 100%;
+    }
+
+    .botonCV button {
+        padding: 14px;
+        font-size: 20px;
+        width: 200px;
+        margin-right: 540px;
+    }
+
+    .experienciasImg1 {
+        margin-top: -300px;
+        margin-left: 27%;
+    }
+
+    .experienciasImg2 {
+        margin-left: 27%;
+    }
+}
