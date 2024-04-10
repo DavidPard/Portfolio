@@ -476,7 +476,7 @@ body {
 
     .tituloProyecto {
         font-weight: bold;
-        font-size: 48px;
+        font-size: 40px;
     }
 
     .raya6 {
@@ -504,7 +504,7 @@ body {
         text-align: left;
         width: 30%;
         display: inline-block;
-        font-size: 48px;
+        font-size: 40px;
         color: black;
     }
 
