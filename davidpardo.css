@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans:wght@300&family=Philosopher&family=Play&display=swap');
 
 /********** COLORES **********/
+body {
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
 :root {
     --color-primario: #5977DF;
     --color-secundario: #27C6E9;
@@ -255,6 +260,10 @@ body {
     align-items: center;
 }
 
+.botonCV button:hover {
+    background-color: #0240bd;
+}
+
 .botonCV button {
     border: none;
     border-radius: 20px;
@@ -374,6 +383,10 @@ body {
     border-radius: 10px;
 }
 
+.verBoton:hover {
+    background-color: #0240bd;
+}
+
 .sasd {
     margin-top: 20px;
 }
@@ -430,6 +443,10 @@ body {
     border-radius: 10px;
 }
 
+.verBoton2:hover {
+    background-color: #0240bd;
+}
+
 
 /********** INTRO DE LA PAGINA MEDIA-QUERY **********/
 @media screen and (min-width: 540px) {
@@ -476,7 +493,7 @@ body {
 
     .tituloProyecto {
         font-weight: bold;
-        font-size: 40px;
+        font-size: 48px;
     }
 
     .raya6 {
@@ -504,7 +521,7 @@ body {
         text-align: left;
         width: 30%;
         display: inline-block;
-        font-size: 40px;
+        font-size: 48px;
         color: black;
     }
 
@@ -655,7 +672,7 @@ body {
     }
 
     .seccion h2 {
-        font-size: 40px;
+        font-size: 48px;
     }
 
     .imagen img {
